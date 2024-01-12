@@ -2,6 +2,8 @@
 
 Extractify is a simple PyQt5-based application designed for handling a moderate number of files and directories. It provides a convenient way to select and extract specific files, consolidating them into a single report file.
 
+![Extractify Screenshot](screenshots/example.png)
+
 ## Features
 
 - **User-Friendly Interface:** The application offers a clean and intuitive user interface, making it easy to navigate and use.
