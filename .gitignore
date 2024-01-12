@@ -1,0 +1,22 @@
+# Python and Django
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+
+# IDE specific files
+.vscode/
+.idea/
+
+# PyCharm
+*.iml
+*.iws
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
