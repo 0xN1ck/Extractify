@@ -51,6 +51,27 @@ Extractify is a simple PyQt5-based application designed for handling a moderate 
    ```bash
    python main.py
    ```
+   
+## Troubleshooting
+
+While working with PyQt5 applications on Linux systems, you might encounter an error related to the Qt platform plugin “xcb”. This issue typically looks like this:
+
+qt.qpa.plugin: Could not load the Qt platform plugin “xcb” in “” even though it was found.
+This application failed to start because no Qt platform plugin could be initialized. Reinstalling the application may fix this problem.
+Available platform plugins are: xcb, eglfs, linuxfb, minimal, minimalegl, offscreen, vnc, wayland-egl, wayland, wayland-xcomposite-egl, wayland-xcomposite-glx, webgl.
+Aborted (core dumped)
+
+### Solution
+
+If you encounter the above error, it indicates a problem with the Qt platform plugin “xcb”. To resolve this issue, you can try reinstalling the libxcb-xinerama0 package which is a dependency for the Qt platform plugin to function correctly on Linux systems.
+
+To reinstall libxcb-xinerama0, execute the following command in the terminal:
+
+```
+sudo apt-get install --reinstall libxcb-xinerama0
+```
+
+This command will reinstall the required library to ensure the PyQt5 application can start successfully without encountering the “xcb” plugin error.
 
 ## Acknowledgments
 
