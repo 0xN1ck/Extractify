@@ -7,7 +7,7 @@ import os
 class TreeFiles(QTreeWidget):
     def __init__(self, parent=None):
         super().__init__(parent)
-        self.setHeaderLabels(['Files и directories'])
+        self.setHeaderLabels(['Files and directories'])
         self.icon_provider = QFileIconProvider()
         self.root_path = ''
         self.checked_items = {}
